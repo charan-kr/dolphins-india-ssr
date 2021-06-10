@@ -47,7 +47,7 @@ Meta.defaultProps = {
   og_site: "https://dolphinsindia.com",
   og_title: "Dolphins India PS Pvt Ltd",
   og_description: "Relive Shopping Experience, Where brand meets customer",
-  og_image: "%PUBLIC_URL%/title_image.png",
+  og_image: "/images/title_image.png",
   og_url: "https://dolphinsindia.com",
   twitter_card:
     "Online shopping experience doesn't get better than what Dolphins India provides",
