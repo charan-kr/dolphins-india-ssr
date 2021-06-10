@@ -6,6 +6,10 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          />
 
           <link
             rel="preload"
@@ -19,12 +23,11 @@ export default class MyDocument extends Document {
             crossorigin
             href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.7.0"
           />
-          <link rel="stylesheet" />
           <meta name="viewport" content="width=device-width" />
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
           <meta charSet="utf-8" />
           <meta name="theme-color" content="#000000" />
-          <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+          <link rel="manifest" href="/manifest.json" />
         </Head>
         <body>
           <Main />
