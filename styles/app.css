@@ -1,0 +1,58 @@
+@import url('./spa.css');
+/* @import url("./dashboard.css"); */
+
+.app{
+    background-color: #ede8d2!important;
+}
+
+.app .logo {
+    width: 350px;
+    margin: auto;
+}
+
+.p-sidebar-content .logo{
+    width: 250px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.p-sidebar .logo img,
+.app .logo img{
+    width: 100%;
+}  
+
+.p-sidebar .p-sidebar-icons {
+    position: absolute!important;
+    left: 0!important;
+    right: 0!important;
+    z-index: 2;
+}
+
+.auth.p-dialog{
+    min-width: 25vw!important;
+    max-width: 40vw!important;
+}
+
+
+
+@media (max-width: 1024px) {
+
+.auth.p-dialog{
+    min-width: 40vw!important;
+    max-width: 60vw!important;
+}
+}
+
+@media (max-width: 574px) {
+.sidebar  .logo,
+.app .logo {
+    width: 250px;
+}
+
+.auth.p-dialog{
+    min-width: 75vw!important;
+    max-width: 90vw!important;
+}
+}
+
+

@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+
+.bg{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:transparent;
+}
+
+.navigation .bars {
+    cursor: pointer;
+    padding: 1rem 2rem;
+    height: 100%;
+    color: #666;
+}
+.navigation .fa-bars{
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.home{ 
+    height: 100vh;
+    /* width: 100vw; */
+    background: #ede8d2;
+}
+
+.home .p-grid{
+    height: 100%;
+}
+.home .bg-image1{
+    height: 100%;
+    background-image: url('/static/media/images/hero.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+
+.home .text-container{
+    height: 80%;
+}
+.home .brand{
+    font-size: 28px;
+}
+
+.home .brand .logo {
+    width: 350px;
+    margin: auto;
+}
+.home .brand .logo img{
+    width: 100%;
+}
+
+.home .sub-heading {
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    margin: 0;
+    color: #999;
+    /* color: #000; */
+}
+.home .heading {
+    padding: 0;
+    margin: 0;
+    font-size: 42px;
+    text-align: center;
+}
+
+
+.selection {
+    background-color: #92a5a6;
+    padding: 4rem 12rem;
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2.5rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+
+}
+#features {
+    background-color: #ffffff;
+    padding: 6rem;
+}
+#features {
+	padding-top: 4rem;
+	padding-bottom: 1.5rem;
+	text-align: center;
+}
+
+#features .card {
+	margin-bottom: 1rem;
+	padding: 3rem 1rem 1rem 1rem;
+	border-radius: 16px;
+	background-color: #fff;
+	border: 1px solid #444;
+}
+
+
+#features img {
+	width: 70px;
+	height: 70px;
+	margin-right: auto;
+	margin-left: auto;	
+}
+#features .content {
+	padding: 1rem;
+}
+#features .content .title {
+	color: #252c38;
+	font-weight: 700;
+	font-size: 1.25rem;
+	line-height: 1.625rem;
+}
+.cards .p-col-12.image{
+    height: 100%;
+}
+.cards > .p-grid:nth-child(odd) {
+    background: #d1dddd;
+}
+.cards > .p-grid:nth-child(even) {
+    background: #ede8d2;
+}
+
+.paragh {
+    padding-right: 4rem;
+}
+.cards .sub-heading {
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #999;
+}
+.cards .heading {
+    font-size: 32px;
+}
+
+.cards .content {
+    margin: 0;
+    padding-bottom: 1rem;
+    font-size: 16px;
+    word-spacing: 2px;
+    line-height: 2;
+}
+.news-letter {
+    background-color: #92a5a6;
+    padding: 4rem;
+}
+
+.contact-us {
+    background-color: #ede8d2;
+    padding: 2rem 12rem
+}
+
+.contact-us p {
+    line-height: 2;
+} 
+
+.links {
+    background-color: #ede8d2;
+    padding: 2rem 4rem;
+    text-align: center;
+    cursor: pointer;
+    color: #000;
+}
+.links .social-links,
+.links .nav-links{
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+
+.sidebar .social-links,
+.sidebar .nav-links{
+    gap:1.5rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: #000;
+}
+.links i.fa-2x{
+    font-size: 20px;
+}
+
+.footer {
+    position: relative;
+    padding: 0.5rem 4rem ;
+    background-color: #ffffff;
+    color: #444;
+}
+.footer #siteseal{
+    position: absolute;
+    width: 6rem;
+    right: 0%;
+}
+.footer img {
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar {
+    font-size: 18px;
+    text-align: left;
+    padding: 1rem;
+}
+.p-sidebar{
+    background-color: #ede8d2!important;
+}
+
+.p-sidebar .p-sidebar-icons button{
+    border: none!important;
+    box-shadow: none!important;
+}
+@media (max-width: 768px) {
+
+    .navigation .bars{
+        padding: 1rem;
+    }
+.home{ 
+    height: auto;
+}
+.home .p-grid{
+    height: auto;
+}
+.home .text-container{
+    height: auto;
+}
+.home .brand .logo {
+    width: 250px;
+}
+.home .brand{
+    font-size: 20px;
+}
+.home .sub-heading {
+    font-size: 14px;
+    /* letter-spacing: 2px;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    margin: 0;
+    color: #999; */
+}
+.home .heading {
+    padding: 0;
+    margin: 0;
+    font-size: 32px;
+    line-height: 1.25;
+    padding-bottom: 2rem;
+}
+.selection{
+    padding: 4rem 1rem;
+
+}
+.selection .title{
+    font-size: 1.5rem;
+}
+#features {
+    background-color: #ffffff;
+    padding: 4rem 1rem;
+}
+.paragh {
+    padding-right: 1rem;
+}
+.news-letter {
+    padding: 1rem;
+}
+
+.contact-us {
+    padding: 2rem 1rem
+}
+.contact-us h1{
+    font-size: 1.5rem;
+}
+.links .nav-links{
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.links .social-links{
+    padding-top: 1.5rem;
+    justify-content: center;
+
+}
+.footer {
+    padding: 0.5rem 1rem ;
+    font-size: 14px;
+}
+
+}
