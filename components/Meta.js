@@ -28,11 +28,6 @@ const Meta = (props) => {
       <meta property="og:url" content={og_url} />
       <meta name="twitter:card" content={twitter_card} />
 
-      <link
-        rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      />
-
       <title>{title}</title>
     </Head>
   );
