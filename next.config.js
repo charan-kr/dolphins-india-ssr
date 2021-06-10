@@ -2,13 +2,17 @@ const isProd = process.env.NODE_ENV === "production";
 
 module.exports = {
   env: {
-    SERVER: isProd ? "https://cdn.mydomain.com" : "http://localhost:3000",
+    SERVER: isProd
+      ? "https://dolphins-india-ssr.vercel.app"
+      : "http://localhost:3000",
   },
   // Use the CDN in production and localhost for development.
-  // assetPrefix: isProd ? "https://cdn.mydomain.com" : "",
+  assetPrefix: isProd ? "https://dolphins-india-ssr.vercel.app" : "",
   images: {
     loader: "imgix",
-    path: "https://localhost:3000/",
+    path: isProd
+      ? "https://dolphins-india-ssr.vercel.app"
+      : "http://localhost:3000/",
   },
   reactStrictMode: true,
 };
