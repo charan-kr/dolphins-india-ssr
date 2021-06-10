@@ -173,15 +173,21 @@ const LandingPage = () => {
                   </div>
                 </div>
                 <div className="p-col-12 p-md-7 p-p-0">
-                  <Image
-                    layout="intrinsic"
-                    loader={myLoader}
-                    width={5472}
-                    height={3468}
-                    src={"/images/hero_original.jpg"}
-                    style={{ width: "100%", height: "100%" }}
-                    alt="A minature cart carrier moving minature blocks"
-                  />
+                  <div
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      position: "relative",
+                    }}
+                  >
+                    <Image
+                      loader={myLoader}
+                      layout="fill"
+                      className="image-container"
+                      src={"/images/hero_original.jpg"}
+                      alt="A minature cart carrier moving minature blocks"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -251,17 +257,21 @@ const LandingPage = () => {
                       className={`p-col-12 p-p-0 p-md-${
                         i % 2 === 0 ? "6" : "6"
                       }`}
-                      // style={{ width: "100%", height: "100%" }}
                     >
-                      <Image
-                        layout="intrinsic"
-                        loader={myLoader}
-                        width={5089}
-                        height={3109}
-                        src={card.imageUrl}
-                        style={{ width: "100%", height: "100%" }}
-                        alt="Partner witha stack full of bills in hand"
-                      />
+                      <div
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          position: "relative",
+                        }}
+                      >
+                        <Image
+                          layout="fill"
+                          loader={myLoader}
+                          src={card.imageUrl}
+                          alt="Partner witha stack full of bills in hand"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -291,18 +301,21 @@ const LandingPage = () => {
                       className={`p-col-12 p-p-0 p-md-${
                         i % 2 === 0 ? "6" : "6"
                       }`}
-                      // style={{ width: "100%", height: "100%" }}
                     >
-                      <Image
-                        layout="intrinsic"
-                        loader={myLoader}
-                        width={5292}
-                        height={3528}
-                        // layout="fill"
-                        src={card.imageUrl}
-                        style={{ width: "100%", height: "100%" }}
-                        alt="Happy customer making her online purchase"
-                      />
+                      <div
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          position: "relative",
+                        }}
+                      >
+                        <Image
+                          layout="fill"
+                          loader={myLoader}
+                          src={card.imageUrl}
+                          alt="Happy customer making her online purchase"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -322,6 +335,9 @@ const LandingPage = () => {
                       border: "2px solid #eee",
                       borderRadius: "5px",
                       padding: "4px",
+                      position: "relative",
+                      height: "100%",
+                      width: "100%",
                     }}
                   >
                     {/* <video
@@ -335,15 +351,11 @@ const LandingPage = () => {
                       <source src={animate} type="video/mp4" />
                       Your browser does not support the video tag.
                     </video> */}
+
                     <Image
-                      width={3300}
-                      height={2550}
-                      layout="intrinsic"
-                      objectFit
-                      // className="fit-image"
+                      layout="fill"
                       loader={myLoader}
                       src={"/images/whatwedo_original.jpg"}
-                      // style={{ width: "100%", height: "100%" }}
                       alt="E-commerce work flow from customer purchase to delivery"
                     />
                   </div>

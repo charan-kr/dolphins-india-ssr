@@ -23,7 +23,6 @@ export default class MyDocument extends Document {
             crossorigin
             href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.7.0"
           />
-          <meta name="viewport" content="width=device-width" />
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
           <meta charSet="utf-8" />
           <meta name="theme-color" content="#000000" />

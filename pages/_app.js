@@ -1,5 +1,5 @@
-import { useEffect, Suspense, lazy } from "react";
-const HomeLayout = lazy(() => import("../layouts/HomeLayout"));
+import { useEffect } from "react";
+import HomeLayout from "layouts/HomeLayout";
 
 import "primeicons/primeicons.css";
 import "primereact/resources/themes/saga-blue/theme.css";
@@ -9,7 +9,6 @@ import "primeflex/primeflex.css";
 import "../styles/globals.css";
 import "../styles/app.css";
 
-const renderLoader = () => <p>Loading</p>;
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     if ("serviceWorker" in navigator) {
@@ -30,11 +29,9 @@ function MyApp({ Component, pageProps }) {
   }, []);
   return (
     <>
-      <Suspense fallback={renderLoader()}>
-        <HomeLayout>
-          <Component {...pageProps} />
-        </HomeLayout>
-      </Suspense>
+      <HomeLayout>
+        <Component {...pageProps} />
+      </HomeLayout>
     </>
   );
 }

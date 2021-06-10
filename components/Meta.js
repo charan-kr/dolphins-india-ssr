@@ -16,6 +16,8 @@ const Meta = (props) => {
   } = props;
   return (
     <Head>
+      <meta name="viewport" content="width=device-width" />
+
       <meta name="keyword" content={keyword} />
       <meta name="description" content={description} />
       <link rel="icon" href={icon} />
