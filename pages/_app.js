@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, Suspense, lazy } from "react";
 const HomeLayout = lazy(() => import("../layouts/HomeLayout"));
 
 import "primeicons/primeicons.css";
@@ -9,7 +9,6 @@ import "primeflex/primeflex.css";
 import "../styles/globals.css";
 import "../styles/app.css";
 
-import { Suspense } from "react";
 const renderLoader = () => <p>Loading</p>;
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
