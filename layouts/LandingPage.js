@@ -172,7 +172,10 @@ const LandingPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="p-col-12 p-md-7 p-p-0">
+                <div
+                  className="p-col-12 p-md-7 p-p-0"
+                  style={{ minHeight: "250px" }}
+                >
                   <div
                     style={{
                       width: "100%",
@@ -257,6 +260,7 @@ const LandingPage = () => {
                       className={`p-col-12 p-p-0 p-md-${
                         i % 2 === 0 ? "6" : "6"
                       }`}
+                      style={{ minHeight: "250px" }}
                     >
                       <div
                         style={{
@@ -301,6 +305,7 @@ const LandingPage = () => {
                       className={`p-col-12 p-p-0 p-md-${
                         i % 2 === 0 ? "6" : "6"
                       }`}
+                      style={{ minHeight: "250px" }}
                     >
                       <div
                         style={{
@@ -329,7 +334,10 @@ const LandingPage = () => {
             <div className="p-col-12 p-mx-auto p-p-0">
               <h1 className="p-text-center">What We Do @ DolphinsIndia</h1>
               <div className="p-grid">
-                <div className="p-col-12 p-md-8 p-xl-5 p-ml-auto p-p-0 ">
+                <div
+                  className="p-col-12 p-md-8 p-xl-5 p-ml-auto p-p-0 "
+                  style={{ minHeight: "250px" }}
+                >
                   <div
                     style={{
                       border: "2px solid #eee",
